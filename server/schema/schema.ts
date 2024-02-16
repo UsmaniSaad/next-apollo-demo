@@ -56,6 +56,7 @@ export const schema = buildSchema(`
 
 export const resolvers = {
   getUsers: (args: Pagination = { offset: 0, limit: 20 }): Response => {
+    console.log(args);
     const { offset, limit } = args;
     const hasNextRecords = TOTAL_USERS > limit + offset;
     return {
