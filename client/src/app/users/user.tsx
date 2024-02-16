@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import addressIcon from "../../../public/address.svg";
 import phoneIcon from "../../../public/phone.svg";
-import { IUser } from "./listusers";
+import { IUser } from "./users";
 
 const User: React.FC<IUser> = ({ name, phone, address }) => {
   return (
